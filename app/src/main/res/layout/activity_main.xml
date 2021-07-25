@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <CheckBox
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/checkboxhint"
+        android:id="@+id/direct"
+        />
+
+    <CheckBox
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/direct"
+        android:layout_alignTop="@id/direct"
+        android:id="@+id/isSchool"
+        android:hint="@string/schoolcheckboxtxt" />
+    <EditText
+        android:layout_below="@id/direct"
+        android:id="@+id/name"
+        android:inputType="text"
+        android:hint="@string/namehint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_below="@id/name"
+        android:id="@+id/pwd"
+        android:hint="@string/pwdhint"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_below="@id/pwd"
+        android:id="@+id/directLink"
+        android:hint="@string/directLinkhint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_below="@id/directLink"
+        android:id="@+id/pKey"
+        android:hint="@string/keystr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_toEndOf="@id/pKey"
+        android:layout_alignTop="@id/pKey"
+        android:id="@+id/pN"
+        android:hint="@string/pNstr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pasdf"
+        android:text="@string/pasdfStr"
+        android:layout_toEndOf="@id/pN"
+        android:layout_alignTop="@id/pN"/>
+    <EditText
+        android:layout_below="@id/pKey"
+        android:id="@+id/pName"
+        android:hint="@string/namestr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_below="@id/pName"
+        android:id="@+id/pBirth"
+        android:hint="@string/birthstr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <WebView
+        android:layout_above="@id/exelayout"
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+    <LinearLayout
+        android:id="@+id/exelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+        android:id="@+id/exebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="@string/exe"
+        android:background="#55EEFF"
+        />
+
+    </LinearLayout>
+</RelativeLayout>
